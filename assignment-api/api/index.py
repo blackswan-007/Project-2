@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 # Initialize LLM
-llm = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"), temperature=0)
+llm = OpenAI(api_key=os.environ.get("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"), temperature=0)
 
 @app.post("/api/")
 async def process_question(
